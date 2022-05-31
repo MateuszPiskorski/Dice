@@ -4,7 +4,7 @@ from random import randint
 
 def check_roll(roll):
     try:
-        result = re.match(r'(\d+D\d+(\+|\-)\d+)|(D\d+(\+|\-)\d+)|(D\d+)|(\d+D\d+)', roll).group()
+        result = re.match(r'(\d+D\d+(\+|\-)\d+)|(D\d+(\+|\-)\d+)|(D\d+)|(\d+D\d+)$', roll).group()
         return result
     except AttributeError:
         return False
